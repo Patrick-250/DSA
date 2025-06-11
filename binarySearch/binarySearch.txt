@@ -1,0 +1,15 @@
+binary search notes
+
+1.used in sorted arrays???##... asc or desc... use agnostic binary search to first figure order....
+how to find what order is the array sorted in? check line 15...
+# when searching for an element in the array, linear search is O(n) since we loop thru the whole array... n is the number of elements in the array...
+
+@ what if we just divide the array into 2 parts and decide which part does that number to search falls in???....Binary search
+
+Binary search theory:
+  step1:start by taking the middle element of the array.. (you do this multiple times to stay with fewer elements)
+  step2: element to search is in only one side of the array.
+  step3:if target =middle element, then answer found with O(1) best case... big O takes worst case O(log n)
+  
+
+if arr[0]>arr[arr.length-1] i.e start element>end element... desc otherwise asc. 
